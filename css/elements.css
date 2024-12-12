@@ -156,7 +156,7 @@ height: 90px;
     object-fit: contain;
 }
 
-@media (width <= 640px) {
+@media (width <= 1024px) {
     .module-skills {
         flex-wrap: wrap;
     }

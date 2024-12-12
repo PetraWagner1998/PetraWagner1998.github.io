@@ -21,7 +21,7 @@ z-index: 1000;
     margin-left: 1.2em;
 }
 
-@media (width <= 640px) {
+@media (width <= 1024px) {
   .page__header .header__header {
       display: flex;
       flex-direction: column;

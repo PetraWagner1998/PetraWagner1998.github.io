@@ -1,0 +1,164 @@
+html {
+    background-color: #fff;
+    box-sizing  border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+body {
+    font-size: 1em;
+    color   #555;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    overflow: clip;
+    padding-top: 70px;
+}
+
+
+.-max-width-limited {
+    max-width: 86vw;
+    margin: auto;
+}
+
+h1, .alpha {
+font-family: 'Corinthia', sans-serif;
+    font-size: 3em;
+    font-weight: medium;
+}
+
+h2, .beta {
+font-family: 'Corinthia', sans-serif;
+    font-size:  4em;
+}
+
+h3, .gamma {
+font-family: 'Corinthia', sans-serif;
+    font-size: 3.5em;
+
+}
+
+h4, .delta {
+font-family: 'Corinthia', sans-serif;
+    font-size: 3em;
+}
+
+.-gradient {
+background-image: linear-gradient(90deg, rgb(97,12,41), rgb(207,182,190));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.heading + p {
+    margin-top: .8em;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.l-2col {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 50px;
+    row-gap: 1em;
+}
+
+.col-wrapper + .col-wrapper {
+    margin-top: 3em;
+}
+
+.-padded-wide {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.-padded-wide--mod-top-only {
+    padding-top: 5em;
+}
+
+.grid-100 .col {
+    grid-column: span 12;
+}
+
+.grid-50-50 .col.col-one,
+.grid-50-50 .col.col-two {
+    grid-column: span 6;
+}
+
+.grid-60-40 .col.col-one {
+    grid-column: span 8;
+}
+.grid-60-40 .col.col-two {
+    grid-column: span 4;
+}
+
+@media (width <= 640px) {
+.heading {
+line-height: 1em;
+}
+.l-2col {
+    column-gap: 10px;
+}
+.grid-60-40 .col.col-one,
+.grid-60-40 .col.col-two,
+.grid-50-50 .col.col-one,
+.grid-50-50 .col.col-two {
+    grid-column: span 12;
+}
+
+.-mobile-inverted .col-one {
+    order: 2;
+}
+}
+
+@media (width <= 1024px) {
+.grid-60-40 .col.col-one,
+.grid-60-40 .col.col-two {
+    grid-column: span 12;
+}
+.l-2col.-inverted .col.col-two {
+    order: 1;
+}
+.l-2col.-inverted .col.col-one {
+    order: 2;
+}
+}
+
+.-bg-gradient {
+    background: linear-gradient(-45deg, rgb(97,12,41), rgb(207,182,190))
+}
+
+.-color-white {
+    color: rgb(255,255,255);
+}
+
+.-centered {
+    text-align: center;
+}
+
+.-vertical-align {
+align-items: center
+}
+
+p + p {
+    margin-top: 1em;
+}

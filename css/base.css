@@ -79,7 +79,7 @@ p {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 50px;
-    row-gap: 1em;
+    row-gap: 1.3em;
 }
 
 .col-wrapper + .col-wrapper {
@@ -113,7 +113,7 @@ p {
 
 @media (width <= 1024px) {
 .heading {
-line-height: 1em;
+line-height: 1.2em;
 }
 .l-2col {
     column-gap: 10px;
@@ -127,6 +127,24 @@ line-height: 1em;
 
 .-mobile-inverted .col-one {
     order: 2;
+}
+
+h1, .alpha {
+    font-size: 4em;
+    font-weight: medium;
+}
+
+h2, .beta {
+    font-size:  8em;
+}
+
+h3, .gamma {
+    font-size: 7em;
+
+}
+
+h4, .delta {
+    font-size: 6em;
 }
 }
 
